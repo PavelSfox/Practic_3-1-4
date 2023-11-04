@@ -1,15 +1,71 @@
+/* @font-face {
+    font-family: 'TT Lakes';
+    src: url('font\TTLakes-Bold.eot');
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+        url('font\TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('font\TTLakes-Bold.woff') format('woff'),
+        url('font\TTLakes-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('font\TTLakes-Regular.eot');
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+        url('font\TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font\TTLakes-Regular.woff') format('woff'),
+        url('font\TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('font\TTLakes-Medium.eot');
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+        url('font\TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url('font\TTLakes-Medium.woff') format('woff'),
+        url('font\TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+} */
+
+
+body{
+    padding:0;
+    margin:0;
+}
+
 .header {
-    background-color: blue;
+    
+}
+.header__panel{
+    /* background-color: blue; */
     display:flex;
+    /* justify-content: space-between; */
+    height:88px;
+    border-bottom: 1px solid #D9FFF5;
 }
 .header__logo {
 }
-.header__button-grid {
+.header__logo-grid{
+    display: flex;
+    justify-content: space-around;
+    margin-right: auto;
+}
+.header__button {
+    display:block;
+    /* align-items: center; */
     background-color: #FF3E79;
-    width:30px;
-    height:30px;
+    width:40px;
+    height:40px;
+    /* padding: 10px; */
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.header__button a{
+    display: flex;
     padding: 10px;
-
+    /* align-items: center; */
 }
 .header__burger {
     display: block;
@@ -18,7 +74,6 @@
     height: 20px;
 }
 .header__burger span{
-    position: absolute;
     background-color: #fff;
     position: absolute;
     left: 0;
@@ -35,22 +90,99 @@
     left : 0;
 }
 .header__burger:before{
-    top:0;
+    top:3px;
     width: 18px;
 }
 .header__burger:after{
-    bottom:0;
+    bottom:3px;
     width: 14px;
 }
-.nasvigation {
+.header__contacts-grid{
+    display:none;
+    /* display:flex;
+    justify-content: space-between; */
+}
+.header__line-first{
+    content: '';
+    display:none;
+}
+.header__line-second{
+    content: '';
+    background-color: #EAEAEA;
+    /* position: absolute; */
+    height: 32px;
+    width: 2px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.header__tech-grid{
+    display:flex;
+    justify-content: space-between;
+}
+main{
+    background-color: #F8F8F8;
+}
+.navigation {
+    margin-left:auto;
 }
 .navigation__list {
     display:flex;
-    
+    flex-direction: row;
+    /* overflow:hidden; */
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /* justify-content: space-between; */
+    padding:0;
+    margin:0;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
 }
 .navigation__item {
+    display:block;
+    text-wrap: nowrap;
+    /* margin:auto auto; */
+    border: 1px solid #B8FFEC;
+}
+.navigation__link{
+    padding:15px;
+    /* font-size:large; */
+    font-family: 'TT Lakes';
+    font-weight: 500;
+    font-style: normal;
 }
 .content {
 }
+.content-title{
+    font-family: 'TT Lakes';
+    font-weight: bold;
+    font-style: normal;
+}
 .content__item {
+    font-family: 'TT Lakes';
+    font-weight: normal;
+    font-style: normal;
+    /* font-size:30px; */
+    font-size: large;
+}
+.content__link {
+    font-family: 'TT Lakes';
+    font-weight: 500;
+    font-style: normal;
+}
+.content__image{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width:768) {
+    .header__contacts{
+        display:flex;
+        justify-content: space-between;
+    }
+}
+@media (min-width:1120) {
+    .header__panel{
+        display:none;
 }

@@ -1,0 +1,17 @@
+*{
+    border-width: 2px;
+    border-style: solid;
+    border-color: unset;
+}
+div{border-color:red}
+section{border-color:yellow}
+nav{border-color:green}
+aside{border-color:blue}
+article{border-color:purple}
+h1, h2, h3, h4, h5 h6{border-color:gainsboro}
+figure{border-color:darkgray}
+figcaption{border-color:gray}
+span{border-color:hotpink}
+li{border-color:yellowgreen}
+a{border-color:paleturquoise}
+p{border-color:palevioletred}
