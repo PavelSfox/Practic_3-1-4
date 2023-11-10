@@ -158,6 +158,7 @@ main{
 .navigation__item {
     display:block;
     text-wrap: nowrap;
+    white-space: nowrap;
     /* margin:auto auto; */
     border-radius: 6px;
     padding:10px 15px;
